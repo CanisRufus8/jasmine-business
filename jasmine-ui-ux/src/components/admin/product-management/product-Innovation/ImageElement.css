@@ -1,0 +1,67 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.square-image {
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(146, 146, 146);
+  color: white;
+  border-radius: 4px;
+  padding: 1px 4px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: rgba(112, 112, 112, 0.5); */
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  opacity: 0; /* Ban đầu ẩn nút */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .prev-button,
+.image-container:hover .next-button {
+  opacity: 1; /* Hiện nút khi hover vào container */
+}
+
+.prev-button {
+  left: 4px;
+}
+
+.next-button {
+  right: 4px;
+}
+
+@media screen and (max-width: 375px) {
+  .square-image {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .square-image {
+    width: 68px;
+    height: 68px;
+  }
+}

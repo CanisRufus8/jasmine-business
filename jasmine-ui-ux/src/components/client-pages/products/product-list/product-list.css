@@ -1,0 +1,21 @@
+.product-list-container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive: Hiển thị từ 5 cột trên mỗi hàng */
+  gap: 16px; /* Khoảng cách giữa các sản phẩm */
+}
+
+@media screen and (max-width: 414px) {
+  .product-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .product-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    gap: 12px;
+  }
+}
+

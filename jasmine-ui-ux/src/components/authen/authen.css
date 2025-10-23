@@ -1,0 +1,44 @@
+.otp-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 10px;
+}
+
+.remember-me-checkbox {
+  font-weight: bold;
+}
+
+.remember-me-checkbox input:checked ~ .box::before {
+  background-color: rgb(4, 236, 4); /* Màu nền khi ô được chọn */
+  border-color: green; /* Màu viền khi ô được chọn */
+}
+
+.remember-me-checkbox .box::before {
+  border-color: green; /* Màu viền */
+}
+
+.error-field {
+  display: flex;
+  justify-content: start;
+  color: rgb(78, 1, 1);
+}
+
+.reset-password {
+  display: flex;
+  justify-content: start;
+}
+
+.info-field {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginImage {
+  border-radius: 30px;
+  margin: 56px 0 20px;
+}

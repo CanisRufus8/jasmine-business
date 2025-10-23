@@ -1,0 +1,80 @@
+.product-card {
+  max-height: 420px;
+  position: relative;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.product_image {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+.product_content {
+  padding: 8px;
+}
+
+.product_content span {
+  font-size: 0.875rem;
+}
+
+.product_name {
+  color: #c01d00f5;
+  overflow: hidden; /* Ẩn phần vượt quá kích thước */
+  text-overflow: ellipsis;
+  display: -webkit-box; /* Legacy webkit */
+  -webkit-line-clamp: 1; /* Số dòng tối đa trước khi áp dụng ellipsis */
+  -webkit-box-orient: vertical; /* Legacy webkit */
+}
+
+.product_description {
+  height: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; /* Legacy webkit */
+  -webkit-line-clamp: 2; /* Số dòng tối đa trước khi áp dụng ellipsis */
+  -webkit-box-orient: vertical; /* Legacy webkit */
+}
+
+.product_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_price {
+  font-weight: bold;
+  font-size: medium;
+  color: rgb(85, 84, 82);
+}
+
+.sale_price {
+  min-width: 30%;
+  background-color: #ece8e7;
+  text-align: left;
+  padding: 4px 8px; /* Khoảng trống xung quanh nội dung */
+  display: inline-block; /* Để border hiển thị hình chữ nhật xung quanh nội dung */
+  border-radius: 8px; /* Bo tròn góc của border */
+}
+
+.discount_percent {
+  margin-left: 8px;
+  background-color: #74bd38;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 2px 4px; /* Khoảng trống xung quanh nội dung */
+  display: inline-block; /* Để border hiển thị hình chữ nhật xung quanh nội dung */
+  border-radius: 8px; /* Bo tròn góc của border */
+}
+
+.product_note {
+  padding: 4px;
+  text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  .product {
+    height: 320px;
+    margin-bottom: 2px;
+  }
+}
